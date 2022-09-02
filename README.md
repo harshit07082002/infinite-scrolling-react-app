@@ -1,4 +1,4 @@
-Username: foo
+Username: foo    
 password: bar
 
 It is an infinite scrolling app which fetches more data when user reach end of page.
