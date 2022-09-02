@@ -1,0 +1,54 @@
+#logo{
+    height: 3rem;
+    border-radius: 30px;
+}
+.container{
+    height:fit-content;
+    cursor:default;
+    min-width: 30rem;
+    width: fit-content ;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.511);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    z-index: 1;
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /* flex-wrap: wrap; */
+}
+.name h2{
+    margin: 1rem 1rem;
+    margin-left: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.724);
+    font-weight: 700;
+}
+.container:hover{
+    background-color: rgb(3,79,132);
+    color: white;
+    top: -10px;
+}
+.container:hover .info h3,.container:hover .info h4,.container:hover .name h2{
+    color: white;
+}
+    @media only screen and (max-width: 928px){
+        .name h2{
+            font-size: 1.1rem;
+        }
+        .info{
+            margin: 0;
+        }
+    }
+        @media only screen and (max-width: 564px){
+            .container{
+            min-width: fit-content !important;
+            /* width: 1rem !important; */
+            width: 70vw !important;
+            margin-right: 1rem;
+            }
+        }
